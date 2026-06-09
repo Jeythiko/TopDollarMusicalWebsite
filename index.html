@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Artist Music Landing Page</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <a href="#" class="logo">
+        <div class="logo-box">Wie</div>
+        <span>Top Dollar</span>
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Releases</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <a href="#" class="stream-btn">
+        Stream Now
+    </a>
+
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <div class="close-btn" id="closeBtn">
+        ✕
+    </div>
+
+    <a href="#">Home</a>
+    <a href="#">Music</a>
+    <a href="#">Releases</a>
+    <a href="#">Videos</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+
+    <a href="#" class="mobile-stream-btn">
+        Stream Now
+    </a>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="badge">OUT NOW</div>
+
+<h1>KUM_CANG</h1>
+
+<p>TOP DOLLAR 211 ft BWOI XENT • 2026</p>
+
+<div class="album">
+<img src="MusicCover.jpg"
+alt="Album Cover">
+</div>
+
+<div class="player">
+
+<audio controls>
+<source src="Emtee_-__Emazweni__Official_Audio_(128k).mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<div class="platforms">
+
+<a href="#" class="platform">
+Spotify
+<span class="icon">🎵</span>
+</a>
+
+<a href="#" class="platform">
+Apple Music
+<span class="icon">🍎</span>
+</a>
+
+<a href="#" class="platform">
+YouTube
+<span class="icon">▶</span>
+</a>
+
+<a href="#" class="platform">
+Audiomack
+<span class="icon">🎧</span>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Top Dollar 211. All Rights Reserved.
+</footer>
+
+<!-- POPUP -->
+
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<div class="close-popup" id="closePopup">✕</div>
+
+<h2>Never miss a drop 🎵</h2>
+
+<p>
+Subscribe and be the first to hear every new release.
+</p>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<button>Subscribe</button>
+
+</div>
+
+</div>
+
+<script>
+
+// MENU
+
+const hamburger =
+document.getElementById("hamburger");
+
+const mobileMenu =
+document.getElementById("mobileMenu");
+
+const closeBtn =
+document.getElementById("closeBtn");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+});
+
+// Auto close after 15 sec
+
+setTimeout(() => {
+    popup.style.display = "none";
+},15000);
+
+</script>
+
+</body>
+</html>
