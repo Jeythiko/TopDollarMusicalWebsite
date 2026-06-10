@@ -8,6 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +16,8 @@
 <nav class="navbar">
 
     <a href="#" class="logo">
-        <div class="logo-box">Wie</div>
-        <span>Top Dollar</span>
+        <div class="logo-box"><img src="Wie.jpg" alt="Top Dollar"></div>
+        <span>Top Dollar 211</span>
     </a>
 
     <ul class="nav-links">
@@ -58,7 +59,7 @@
 </div>
 
 <!-- HERO -->
-
+<section id="Home">
 <section class="hero">
 
 <div class="badge">OUT NOW</div>
@@ -66,46 +67,46 @@
 <h1>KUM_CANG</h1>
 
 <p>TOP DOLLAR 211 ft BWOI XENT • 2026</p>
-
+<br>
+<div class="musicCard">
 <div class="album">
 <img src="MusicCover.jpg"
 alt="Album Cover">
-</div>
-
-<div class="player">
-
+<div class="audioBtn">
 <audio controls>
 <source src="Emtee_-__Emazweni__Official_Audio_(128k).mp3" type="audio/mpeg">
 </audio>
-
 </div>
+</div>
+</div>
+
 
 <div class="platforms">
 
-<a href="#" class="platform">
-Spotify
-<span class="icon">🎵</span>
+<a href="#" class="spotify">
+    <i class="fa-brands fa-spotify"></i>
+    Spotify
 </a>
 
-<a href="#" class="platform">
-Apple Music
-<span class="icon">🍎</span>
+<a href="#" class="apple-music">
+    <i class="fa-brands fa-apple"></i>
+    Apple Music
 </a>
 
-<a href="#" class="platform">
-YouTube
-<span class="icon">▶</span>
+<a href="#" class="youtube-music">
+    <i class="fa-brands fa-youtube"></i>
+    YouTube
 </a>
 
-<a href="#" class="platform">
-Audiomack
-<span class="icon">🎧</span>
+<a href="https://audiomack.com" class="audiomack">
+<img src="audiomack-icon.jpg" alt="Audiomack">
+    Audiomack
 </a>
 
 </div>
 
 </section>
-
+</section>
 <footer>
 © 2026 Top Dollar 211. All Rights Reserved.
 </footer>
@@ -155,6 +156,16 @@ closeBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("closePopup");
+
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+
+});
 // Auto close after 15 sec
 
 setTimeout(() => {
