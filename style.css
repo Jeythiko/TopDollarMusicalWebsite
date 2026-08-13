@@ -204,7 +204,7 @@ body{
 }
 
 .hero h1{
-    font-size:40px;
+    font-size:30px;
     margin-bottom:10px;
 }
 
@@ -303,7 +303,7 @@ footer{
     width:300px;
 }
 .hero h1{
-    font-size:22px;
+    font-size:18px;
     margin-bottom:10px;
 }
 
@@ -351,13 +351,8 @@ footer{
   overflow:hidden;
   box-shadow:0 3px 10px rgba(0,0,0,0.1);
   text-decoration:none;
-  color:black;
   transition: transform 0.2s, box-shadow 0.2s;
   width:360px;
   margin: auto;
-  background:linear-gradient(
-        90deg,
-        #f5c542,
-        #ff7b00
-    );
+ 
 }
